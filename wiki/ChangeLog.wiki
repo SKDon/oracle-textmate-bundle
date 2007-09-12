@@ -1,4 +1,4 @@
-#summary Changes
+#summary Changes and fixes included in each release.
 
 = Release 1.1 =
 
