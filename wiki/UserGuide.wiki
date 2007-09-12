@@ -1,5 +1,9 @@
 #summary TextMate Oracle Bundle User Guide.
 
+= Installing =
+
+See the [InstallationGuide Installation Guide] for details on installing this bundle.
+
 = Syntax =
 
 
