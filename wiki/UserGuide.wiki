@@ -16,7 +16,7 @@ I use variables starting _pi`_`_, _po`_`_ and _pio`_`_ for function and procedur
 
 The indentation rules will indent `BEGIN`, `IF` and `LOOP` blocks.  The `EXCEPTION` keyword will be at the same level as the surrounding `BEGIN` block with the exception bodies indented one level.  This is to enable full auto-indenting to work correctly.
 
-Variable declaration blocks will be indented if the `IS` or `AS` of a package, function or procedure is at the start of a line.
+Multi-line procedure and function calls and multi-line declarations will not be indented.  I have yet to determine a suitable definition which will allow this consistently.
 
 = Folding =
 
@@ -49,6 +49,10 @@ This command takes the selected text (or the current word if there is no selecti
 == Open SQL*Plus ==
 
 This command starts an interactive SQL*Plus session in a Terminal window.
+
+== Find Procedure ==
+
+This command will search for a procedure or function in a package body with the name of the current word.  If it is found, the file containing it is shown and the cursor moves to the start of the procedure or function.
 
 = Importing Files =
 
@@ -107,3 +111,7 @@ Inserts an `IF` block based on a failure result code.
 == success [success<TAB>] ==
 
 Inserts an `IF` block based on a success result code.
+
+= Templates =
+
+There are two templates available.  One for creating a package spec file and one for creating a package body file.
