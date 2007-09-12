@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>osascript &lt;&lt;EOF
+   tell application "Terminal"
+      activate
+      do script "cd '$TM_DIRECTORY';NLS_LANG=AMERICAN_AMERICA.UTF8;export NLS_LANG;sqlplus $ORA_USER/$ORA_PWD@$ORA_CONNECT"
+   end tell
+EOF
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^o</string>
+	<key>name</key>
+	<string>Open SQL*Plus</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.plsql.oracle</string>
+	<key>uuid</key>
+	<string>C90FDB5C-2F32-44EE-9059-8E0CA0CC9246</string>
+</dict>
+</plist>
