@@ -3,3 +3,5 @@
 = Installing =
 
 Firstly, download the latest release from the Downloads page.
+
+See the [UserGuide User Guide] for usage details.
