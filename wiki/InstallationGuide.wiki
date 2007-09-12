@@ -6,7 +6,7 @@ Firstly, download the latest release from the [http://code.google.com/p/oracle-t
 
 Unzip this file (if you are using Safari, then this will probably have been done for you).
 
-With !TextMate installed, you should be able to just double-click on the unzipped version and !TextMate will move it into your `~/Library/Application Support/TextMate` folder and it will appear in the Bundle Editor and in the Bundle menus.
+With !TextMate installed, you should be able to just double-click on the unzipped bundle and !TextMate will move it into your `~/Library/Application Support/TextMate` folder and it will appear in the Bundle Editor and in the Bundle menus.
 
 
 See the [UserGuide User Guide] for usage details.
