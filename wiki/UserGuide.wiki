@@ -6,7 +6,7 @@ See the [InstallationGuide Installation Guide] for details on installing this bu
 
 = Syntax =
 
-
+The included syntax does not rely on the SQL bundle distributed with !TextMate (which is mainly aimed at just SQL content, whereas this bundle is designed more for PL/SQL.
 
 
 = Indentation =
