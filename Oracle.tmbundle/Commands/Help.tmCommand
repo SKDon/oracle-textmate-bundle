@@ -33,7 +33,7 @@ The _Open SQL*Plus_ command opens up SQL*Plus in the project folder and logs in 
 
 ## Find Procedure
 
-The _Find Procedure_ command will search for a procedure or function in a package body with the name of the current word in a package body.  If it is found, the file containing it is shown and the cursor moves to the start of the procedure or function.
+The _Find Procedure_ command will search for a procedure or function in a package body with the name of the current word.  If it is found, the file containing it is shown and the cursor moves to the start of the procedure or function.
 
 ### Environment Variables
 
