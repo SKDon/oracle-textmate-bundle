@@ -31,6 +31,10 @@ The _Describe Selection or Word_ command takes the selected text or current word
 
 The _Open SQL*Plus_ command opens up SQL*Plus in the project folder and logs in using the username, password and connectstring supplied as environment variables. Useful for running "interactive" SQL-scripts.
 
+## Find Procedure
+
+The _Find Procedure_ command will search for a procedure or function in a package body with the name of the current word in a package body.  If it is found, the file containing it is shown and the cursor moves to the start of the procedure or function.
+
 ### Environment Variables
 
 The commands assumes the following environment variables are properly set:
