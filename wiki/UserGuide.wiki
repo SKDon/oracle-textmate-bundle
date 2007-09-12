@@ -10,7 +10,7 @@ The included syntax does not rely on the SQL bundle distributed with !TextMate (
 
 The syntax distinguishes various keywords, etc for highlighting.  A number of internal Oracle functions have been included.  These are expected to be the ones most used in order not to overrun the configuration.  If you find there are functions you use which are not included, you can use the Bundle Editor to add them.  Just scroll to the appropriate section in the syntax and add them to the regular expression.
 
-I use variable starting _pi`_`_, _po`_`_ and _pio`_`_ for function and procedure parameters and _l`_`_ for local variable, so these are identified in the syntax, too.  Feel free to alter these definitions to suit your coding style.
+I use variables starting _pi`_`_, _po`_`_ and _pio`_`_ for function and procedure parameters and _l`_`_ for local variable, so these are identified in the syntax, too.  Feel free to alter these definitions to suit your coding style.
 
 = Indentation =
 
