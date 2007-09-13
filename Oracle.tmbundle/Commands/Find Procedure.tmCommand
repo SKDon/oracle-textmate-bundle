@@ -18,7 +18,7 @@ proc = ENV['TM_CURRENT_WORD']
 
 if line.match(%r{\b([-a-z0-9_]+)\.#{proc}}i)
   pkg = $1
-  file = %x{egrep -il -r "create.*package  *body  *#{pkg}" "#{proj}"}.split(/\n/).last
+  file = %x{egrep -il -r "create.*package  *body  *#{pkg}\\b" "#{proj}"}.split(/\n/).last
   if file
     res = %x{egrep -in "(function|procedure)  *#{proc}" "#{file}"}.split(/\n/).last
   else
@@ -28,8 +28,13 @@ else
   res = %x{egrep -in "(function|procedure)  *#{proc}" "#{file}"}.split(/\n/).last
 end
 
-data = res.split(/:/)
-TextMate.go_to :file =&gt; file, :line =&gt; data[0], :column =&gt; 0
+if res
+  data = res.split(/:/)
+  TextMate.go_to :file =&gt; file, :line =&gt; data[0], :column =&gt; 0
+else
+  file = file.sub(%r{#{proj}/?}, '')
+  TextMate.exit_show_tool_tip "Procedure #{proc} not found in #{file}"
+end
 </string>
 	<key>fallbackInput</key>
 	<string>word</string>
