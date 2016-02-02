@@ -1,0 +1,15 @@
+# Release 1.1 #
+
+Changes in this release:
+  * Tidied up regular expressions.
+  * Added templates for package spec and body files.
+  * Added command to switch display to the source of the function/procedure at the cursor.
+
+# Release 1.0 #
+
+Initial release.
+Features include:
+  * Extensive PL/SQL syntax.
+  * Indentation rules.
+  * Various snippets for inserting code.
+  * Various commands for running SQL\*Plus or searching documentation.
